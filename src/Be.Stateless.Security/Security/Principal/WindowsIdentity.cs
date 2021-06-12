@@ -104,31 +104,31 @@ namespace Be.Stateless.Security.Principal
 					break;
 
 				case NativeMethods.CredUIReturnCode.ERROR_CANCELLED:
-					throw new Exception("Canceled.");
+					throw new("Canceled.");
 
 				case NativeMethods.CredUIReturnCode.ERROR_NO_SUCH_LOGON_SESSION:
-					throw new Exception("No such logon session.");
+					throw new("No such logon session.");
 
 				case NativeMethods.CredUIReturnCode.ERROR_NOT_FOUND:
-					throw new Exception("Not found.");
+					throw new("Not found.");
 
 				case NativeMethods.CredUIReturnCode.ERROR_INVALID_ACCOUNT_NAME:
-					throw new Exception($"Invalid account name ({username}).");
+					throw new($"Invalid account name ({username}).");
 
 				case NativeMethods.CredUIReturnCode.ERROR_INSUFFICIENT_BUFFER:
-					throw new Exception("Insufficient buffer.");
+					throw new("Insufficient buffer.");
 
 				case NativeMethods.CredUIReturnCode.ERROR_BAD_ARGUMENTS:
-					throw new Exception("Bad arguments.");
+					throw new("Bad arguments.");
 
 				case NativeMethods.CredUIReturnCode.ERROR_INVALID_PARAMETER:
-					throw new Exception("Invalid parameter.");
+					throw new("Invalid parameter.");
 
 				case NativeMethods.CredUIReturnCode.ERROR_INVALID_FLAGS:
-					throw new Exception("Invalid flags.");
+					throw new("Invalid flags.");
 
 				default:
-					throw new Exception("Unknown credential result encountered.");
+					throw new("Unknown credential result encountered.");
 			}
 		}
 

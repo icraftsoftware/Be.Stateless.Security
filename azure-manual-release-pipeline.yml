@@ -1,4 +1,5 @@
-trigger: none
+﻿trigger: none
+pr: none
 
 resources:
   repositories:
@@ -11,4 +12,4 @@ extends:
   template: Pipelines/net/manual-release.yml@pipelineTemplateRepository
   parameters:
     Major: 2
-    Minor: 0
+    Minor: 1
